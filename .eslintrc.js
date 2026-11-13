@@ -46,11 +46,9 @@ module.exports = {
     '@typescript-eslint/member-ordering': 'warn',
     '@typescript-eslint/class-literal-property-style': 'warn',
     '@typescript-eslint/prefer-for-of': 'warn',
-    // Formatting is prettier's job - `extends: ['prettier']` above exists to hand it over.
-    // `padded-blocks` and `lines-between-class-members` used to be re-enabled here, which
-    // contradicted that and made `format` and `lint` fight: prettier removed the blank line
-    // after a class brace and eslint demanded it back. The reference packages (Asena,
-    // ergenecore, hono-adapter) set neither.
+    // Formatting is bun fmt's job; `extends: ['prettier']` above only switches off ESLint's style rules.
+    // `padded-blocks` and `lines-between-class-members` stay off: bun fmt removes the blank line after
+    // a class brace, and ESLint would demand it back.
     // `void somePromise()` is the deliberate fire-and-forget idiom used across this
     // monorepo for work that must not block the caller and whose failure is handled
     // inside the promise. Flagging it here would only invite `.catch(() => {})`.
