@@ -78,13 +78,14 @@
     "eslint-plugin-promise": "^6.6.0",
     "prettier": "^3.9.6",
     "reflect-metadata": "^0.2.2",
-    "typescript": "^5.9.3"
+    "typescript": "npm:@typescript/typescript6@^6.0.2",
+    "@typescript/native": "npm:typescript@^7.0.2"
   },
   "peerDependencies": {
     "@asenajs/asena": "^0.12.2 || ^0.13.0",
     "better-auth": ">=1.2.0 <2",
     "reflect-metadata": "^0.2.2",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3 || ^6.0.0 || ^7.0.0"
   },
   "peerDependenciesMeta": {
     "better-auth": {
