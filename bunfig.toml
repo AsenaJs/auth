@@ -29,5 +29,6 @@ experimentalTernaries = false
 experimentalOperatorPosition = "end"
 singleAttributePerLine = false
 requirePragma = false
+checkIgnorePragma = false
 insertPragma = false
 ignorePatterns = ["*.md"]
