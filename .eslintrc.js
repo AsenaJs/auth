@@ -46,9 +46,7 @@ module.exports = {
     '@typescript-eslint/member-ordering': 'warn',
     '@typescript-eslint/class-literal-property-style': 'warn',
     '@typescript-eslint/prefer-for-of': 'warn',
-    // Formatting is bun fmt's job; `extends: ['prettier']` above only switches off ESLint's style rules.
-    // `padded-blocks` and `lines-between-class-members` stay off: bun fmt removes the blank line after
-    // a class brace, and ESLint would demand it back.
+    // Formatting is bun fmt's job; `extends: ['prettier']` turns off the ESLint rules that would conflict with it.
     // `void somePromise()` is the deliberate fire-and-forget idiom used across this
     // monorepo for work that must not block the caller and whose failure is handled
     // inside the promise. Flagging it here would only invite `.catch(() => {})`.
