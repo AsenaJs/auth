@@ -29,7 +29,7 @@ export abstract class BetterAuthService<TUser extends AuthUser = AuthUser> imple
 
     const session = response?.session;
 
-    if (!session?.id || !session.userId) {
+    if (!response || !session?.id || !session.userId) {
       return null;
     }
 

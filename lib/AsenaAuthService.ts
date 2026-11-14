@@ -398,7 +398,7 @@ export abstract class AsenaAuthService<TUser extends AuthUser = AuthUser> implem
     }
   }
 
-  private toAuthSession(stored: StoredSession<TUser>, loaded?: TUser): AuthSession<TUser> {
+  private toAuthSession(stored: StoredSession<TUser>, loaded?: TUser | null): AuthSession<TUser> {
     return {
       user: loaded ?? structuredClone(stored.user),
       session: {

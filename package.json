@@ -66,7 +66,8 @@
     "@asenajs/asena": "^0.12.2",
     "@changesets/cli": "^3.0.3",
     "@types/bun": "latest",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/eslint-plugin": "^8.72.2",
+    "@typescript-eslint/parser": "^8.72.2",
     "better-auth": "^1.7.14",
     "eslint": "^8.57.1",
     "eslint-config-alloy": "^5.1.2",
@@ -76,13 +77,14 @@
     "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-promise": "^6.6.0",
     "reflect-metadata": "^0.2.2",
-    "typescript": "^5.9.3"
+    "typescript": "npm:@typescript/typescript6@^6.0.2",
+    "@typescript/native": "npm:typescript@^7.0.2"
   },
   "peerDependencies": {
     "@asenajs/asena": "^0.12.2 || ^0.13.0",
     "better-auth": ">=1.2.0 <2",
     "reflect-metadata": "^0.2.2",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3 || ^6.0.0 || ^7.0.0"
   },
   "peerDependenciesMeta": {
     "better-auth": {
