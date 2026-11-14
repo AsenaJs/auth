@@ -1,6 +1,6 @@
 {
   "name": "@asenajs/asena-auth",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "LibirSoft",
   "description": "Authentication for AsenaJS - native opaque sessions and Better Auth behind the @asenajs/asena/auth contract, with route guards enforced before validators",
   "main": "dist/index.js",
